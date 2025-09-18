@@ -45,7 +45,6 @@ h2{
 .logo {
     display: flex;
     align-items: center;
-
 }
 .logo img {
     width: 40px;
@@ -58,7 +57,6 @@ h2{
     text-decoration: none;
     transition-duration: 0.8s;
 }
-
 .barra_navegacion div span a::before {
     opacity: 0;
 }
@@ -75,37 +73,6 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: -3rem;
-}
-.div_imagen {
-    width: 100%;
-    height: 18rem;
-    background-color: rgb(35, 131, 255); /* rgb(86, 187, 226) */
-    background-image: url(./Images/Glaciares.png);
-    background-attachment: fixed;
-    box-shadow: -1px 5px 16px 0px rgba(120,120,120,0.75);
--webkit-box-shadow: -1px 5px 16px 0px rgba(120,120,120,0.75);
--moz-box-shadow: -1px 5px 16px 0px rgba(120,120,120,0.75);
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-.div_imagen h1 {
-    padding: 1rem;
-    color: white;
-    text-shadow: 2px 1px black;
-    animation-duration: 2s;
-    animation-name: entrada;
-}
-@keyframes entrada {
-    from {
-        margin-left: 100%;
-        width: 300%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
 }
 .pagina_centrada {
     width: 78vw;
@@ -142,10 +109,4 @@ h2{
     -webkit-box-shadow: 0px 5px 4px 0px rgba(120,120,120,0.75);
     -moz-box-shadow: 0px 5px 4px 0px rgba(120,120,120,0.75);
     margin: 2.3rem 0 5rem 0;
-}
-.lista_soluciones {
-    list-style-type:square;
-}
-.lista_soluciones li {
-    margin-bottom: 1em;
 }

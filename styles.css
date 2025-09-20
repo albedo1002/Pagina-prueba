@@ -20,7 +20,7 @@ header {
 }
 main {
     width: 100%;
-    height: 100vw;
+    height: 400px;
 }
 footer {
     background-color: var(--color_principal);
@@ -33,40 +33,48 @@ h2{
     margin-bottom: 1.8rem;
 }
 .barra_navegacion {
-    width: 80%;
+    width: 92%;
     height: 40%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
+    padding: 0;
     background-color: rgba(99, 160, 240, 0.637);
     border-radius: 8px;
+    max-width: 1000px;
+    list-style: none;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .logo {
     display: flex;
     align-items: center;
-
+    margin-right: 2rem;
 }
 .logo img {
     width: 40px;
     height: 40px;
     border-radius: 4px;
 }
-.barra_navegacion div span a {
+.barra_navegacion ul li a {
     color: white;
     padding: 7px;
     text-decoration: none;
     transition-duration: 0.8s;
+    display: block;
 }
-
-.barra_navegacion div span a::before {
+.barra_navegacion li {
+    display: inline-block;
+    text-align: center;
+}
+.barra_navegacion ul li a::before {
     opacity: 0;
 }
-.barra_navegacion div span a:hover {
+.barra_navegacion ul li a:hover {
     background-color: rgb(46, 130, 240);
     border-radius: 10px;
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5)
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
 }
 
 /* Estilos del contenido de la página */
@@ -86,6 +94,7 @@ h2{
 -webkit-box-shadow: -1px 5px 16px 0px rgba(120,120,120,0.75);
 -moz-box-shadow: -1px 5px 16px 0px rgba(120,120,120,0.75);
     display: flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
@@ -132,6 +141,7 @@ h2{
     height: fit-content;
     display: flex;
     justify-content: center;
+    
 }
 .imagenes_celular {
     display: flex;
@@ -148,4 +158,83 @@ h2{
 }
 .lista_soluciones li {
     margin-bottom: 1em;
+}
+.contiene_footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nom_pro, .logo_usb, .inf_usb {
+    width: 27%;
+    height: 78%;
+    color: white;
+    text-align: center;
+}
+.nom_pro p, .logo_usb p, .inf_usb p {
+    font-size: 0.7rem;
+}
+.logo_usb img{
+    width: 80px;
+    height: 60px;
+}
+
+/* Estilos para computador */
+@media (min-width: 900px) {
+    ul li {
+        max-width: 80%;
+    }
+}
+@media (min-width:1100px) {
+    .barra_navegacion {
+        justify-content: space-around;
+    }
+    .div_imagen {
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .div_imagen h1 {
+        font-size: 4em;
+        text-shadow: 6px 4px black;
+    }
+    main {
+        height: 600px;
+    }
+    .pagina_centrada {
+        width: clamp(70%, 20vw + 10rem, 50%);
+        max-width: 80%;
+    }
+    .imagenes_computador {
+        display: flex;
+        align-items: center;
+    }
+    .imagenes_computador p {
+        width: 90%;
+    }
+    h2 {
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: clamp(1rem, 2vw + 1rem, 1.25rem);
+    }
+    .main_centrado ul li {
+        font-size: clamp(1rem, 2vw + 1rem, 1.25rem)
+    }
+    .nom_pro p {
+        font-size: 1rem;
+    }
+    .inf_usb p {
+        font-size: 1rem;
+    }
+    .logo_usb img {
+        width: 160px;
+        height: 100px;
+    }
+    ul li {
+        max-width: 70%;
+    }
 }

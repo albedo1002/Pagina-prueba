@@ -117,7 +117,7 @@ h2{
       }
 }
 .pagina_centrada {
-    width: 78vw;
+    width: 90%;
     height: fit-content;
     margin-bottom: 5rem;
 }
@@ -178,6 +178,25 @@ h2{
 .logo_usb img{
     width: 80px;
     height: 60px;
+}
+/* Tarjeas de los items finales */
+.lista_soluciones {
+    width: 100%;
+}
+.icono {
+    width: 8em;
+    height: 8em;
+}
+.tarjeta_solucion {
+    border: 1px solid black;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+.solucion1 {
+    border: 8px solid rgb(182, 241, 148);
+    background-color: rgb(80, 245, 47);
 }
 
 /* Estilos para computador */

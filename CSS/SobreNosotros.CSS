@@ -92,6 +92,8 @@ h2{
 .pagina_centrada {
     width: 78vw;
     height: fit-content;
+    display: flex;
+    justify-content: center;
     margin-bottom: 5rem;
 }
 .volver {
@@ -132,6 +134,7 @@ h2{
 }
 .tarjeta_celular {
     width: 90%;
+    max-width: 420px;
     height: 380px;
     border-radius: 28px;
     border: 2px solid rgb(216, 216, 216);
@@ -191,7 +194,16 @@ h2{
 @media (min-width:900px) {
     .contiene_tarjetas {
         flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 90%;
         height: fit-content;
+        justify-content: center;
     }
-
+    .pagina_centrada_computador {
+        height: 100%;
+    }
+    .tarjeta_computador {
+        width: 40em;
+        height: 100%;
+    }
 }

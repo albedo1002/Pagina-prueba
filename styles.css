@@ -188,12 +188,12 @@ h2{
     height: 8em;
 }
 .tarjeta_solucion {
-    border: 1px solid black;
     padding: 1.4rem;
     display: flex;
     align-items: center;
     border-radius: 12px;
     margin: 4rem 0 4rem 0;
+    justify-content: space-between;
 }
 .solucion1 {
     border: 8px solid rgb(182, 241, 148);
